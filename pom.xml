@@ -63,16 +63,8 @@
 		<plugins>
 			<plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
+            <artifactId>maven-jar-plugin</artifactId> 
             <configuration>
-			<archive>
-                <manifest>
-                <mainClass>liberty.emsbackend.EmsBackendApplication</mainClass>
-                </manifest>
-            </archive>
-                  <descriptorRefs>
-        <descriptorRef>jar-with-dependencies</descriptorRef>
-      </descriptorRefs>
                 <source>1.8</source>
                 <target>1.8</target>
             </configuration>
