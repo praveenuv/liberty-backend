@@ -45,7 +45,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public List<EmployeeDto> getAllEmployees() {
 		// TODO Auto-generated method stub
-		List<Employee> employees = (List<Employee>) employeeRepository.findData();
+		List<Employee> employees = (List<Employee>) employeeRepository.findAll();
 		return employees.stream().map((employee) -> EmployeeMapper.mapToEmpoyeeDto(employee))
 				.collect(Collectors.toList());
 	}
