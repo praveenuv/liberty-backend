@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.*;
 public interface EmployeeRepository extends JpaRepository<Employee,Long> {
 	
 	@Query(
-			  value = "SELECT * FROM railway.EMPLOYEES  WHERE status = 'accepted'", 
+			  value = "select * from railway.employees  where status = 'accepted'", 
 			  nativeQuery = true)
 			Collection<Employee> findData();
 
